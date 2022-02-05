@@ -1,10 +1,10 @@
-# abstrace
+# Abstract
 - compare modern sequential scans and secondary index scan
   - while scan become more useful in more cases than before, **both access paths are still useful**.
   - aps is still required to achieve the best performance
 - take **query concurrency** into account in APS.
 
-# intro
+# Intro
 ## 回顾aps
 - index: when query is predicted **on a clusted index**.
 - sequential scan: when query is predicated on an attribute **with no index**.
@@ -12,7 +12,7 @@
 - The decision of aps is typically based on a selectivity threshold, underlying hardware properties, system design parameters and data layout.
   - fixed for all queries.
 
-## modern analysis systems
+## Modern analysis systems
 column-group storage give more pressure on secondary indexing.
 1. only attr needed by the query , avoiding unneeded reads in secondary index.
 2. **vectorized execution** passes block of tuple to each operator.
@@ -29,3 +29,28 @@ Hot data can be memory resident due to large memories, questions need for second
 - time for optimization takes limited time, and became new bottleneck.
 
 # APS
+## Model preliminatries
+- Select Operator: filter out moust data in a query
+  - Standard Select API
+  - Input is column or column-group
+- Query Workload: query number and query selectivity; Sum as total selectivity.
+- Data Layout: shape and size of input data.
+- Hardware: access time(cache or mem) and mem bandwidth.
+![parameters](assets/Parameters.png)
+
+## In-Mem Shared Scan
+Tight `for` loop where tuple is in succession. Each attr is stored in dense arrays with fixed width elements,
+such iteration over sequential memory is limited only by mem-bandwidth.
+- Data Consumption Cost
+  - Data Movement for Scan: $TD_s = frac{N · t_s}{BW_s}$ which is total data size divided by scan bandwitdh.
+  - Predicate Evaluation: cost feed value to predication, $PE = 2·f_p·p·N$, where 2 is bound, f_p·p is cpu cost.
+  - Cost calcu: Each query assigned to one hw thread even #query > #hw-thread.
+  - So data consumption cost is Max(TD_s, PE)
+- Result Writing: $TD_r = frac{N · rw}{BW_R}$ total result size divided by writing bandwidth.
+- Cost Total
+  - Cost for single query i is $Cost_singleqwr = \max(TD_s, PE) + s_i·TD_r$
+  - Sharing Scan: 1) group queries based on attr 2) evaluate each query in batch;
+    - allows data used by queries before evicted
+    - Assume all queries start simutaneously, same data consumption cost.
+    - CPU cost increased, so as output workload:
+    - $Cost_tot = \max(TD_s, q·PE) + S_tot·TD_r$
