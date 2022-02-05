@@ -54,3 +54,33 @@ such iteration over sequential memory is limited only by mem-bandwidth.
     - Assume all queries start simutaneously, same data consumption cost.
     - CPU cost increased, so as output workload:
     - $Cost_tot = \max(TD_s, q·PE) + S_tot·TD_r$
+
+## In-Mem Secondary B+ Tree
+Btree stores a copy of the indexed attr in its leaves and respective rowIDs.
+- first traverse tree to find first leaf correspond to request value range
+- then traverse leaves reading indexed data
+- finally write result set ordered by the indexed attribute
+- and result output is sorted
+  - in columns-store, tuple reconstruction is heavy cost component, unsorted result will force random access
+  - sort could benefit subsequent operators
+
+- Tree traversal: $TT = (1 + log_b^N)(C_M + bC_A/2 + b·f_p·p /2)$, which is heigth times (random memCost + avg cost to find target child)
+- Leaves traversal: $s_i * N/b * C_M$, where N/b is number of leaves in a tree
+  - leaf nodes are in arbitrary mem locations , a cache miss is incured
+- Data Traversal: $s_i · N(aw+ow) · BW_I$
+- Result Writing: identical to scan
+- Sorting: $s_i N log(s_i * N) C_A$
+- Concurrent:
+  - shared index scan divides concurrent overlapping queries into hw thread.
+  - lead to natural sharing in cache, and the model in this analysis showed **worst case** analysis.
+  - with q queries, tree is traversed in total q times
+  - putting together, multiply const with q and sum all s_i
+
+## Evaluate
+APS = IndexCost / ScanCost.
+- Cache miss would have great impact on this ratio
+- ts in dominator, higher ts, lower APS
+- Small value of q would lower APS, first division is multiplied by value smaller than 1
+
+- Still, Index out perform scan when selectivity is low.
+- As concurrency goes up, selectivity changed rapidly along move line.
