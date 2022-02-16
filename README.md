@@ -8,5 +8,4 @@ Materials and note for learning db
 ## Not categorized
 - https://mp.weixin.qq.com/s?__biz=MzI5Mjk3NDUyNA==&mid=2247483895&idx=1&sn=05b687a465f5e705dbebfdccaf478f4b&chksm=ec787b24db0ff
 - http://accelazh.github.io/database/Database-Query-Optimizer-Volcano-Cascades
-- client.sankuai.com/#/page/app/56/10/week-paper
 - https://pingcap.com/zh/blog?tag=TiDB%20%E6%BA%90%E7%A0%81%E9%98%85%E8%AF%BB
