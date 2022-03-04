@@ -2,6 +2,10 @@
 This file will be organized in a reverse chronological order，with week record after 7 daily record.
 
 ## W9-2022
+### Mar 4
+- Rust
+  - [Green Threads Explained in 200lines](https://cfsamson.gitbook.io/green-threads-explained-in-200-lines-of-rust/)
+### Mar 3
 - finished multiple rust materials。including books、gitbooks and leetcode
 - working on a tutorial vm based on rust: https://blog.subnetzero.io/categories/iridium/
 
