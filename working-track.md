@@ -2,9 +2,13 @@
 This file will be organized in a reverse chronological order，with week record after 7 daily record.
 
 ## W9-2022
+### Mar 5
+- OS
+  - installing riscv qemu
 ### Mar 4
 - Rust
   - [Green Threads Explained in 200lines](https://cfsamson.gitbook.io/green-threads-explained-in-200-lines-of-rust/)
+- Trying to find a rust project for practice, but cs140 is archived, maybe qemu first.
 ### Mar 3
 - finished multiple rust materials。including books、gitbooks and leetcode
 - working on a tutorial vm based on rust: https://blog.subnetzero.io/categories/iridium/
