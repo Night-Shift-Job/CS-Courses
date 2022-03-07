@@ -7,7 +7,7 @@ This file will be organized in a reverse chronological order，with week record 
   - Cypher: finished [Beginner Cypher](https://neo4j.com/developer/cypher/)
   - Designing data-intensive application: P34-42
 - OS
-  - finised (ch5-cpu_exceptions)[https://os.phil-opp.com/cpu-exceptions/]
+  - finised [ch5-cpu_exception](https://os.phil-opp.com/cpu-exceptions/)
 ## W9-2022
 ### Week Summary
 Devote much time on rust-vm and rust-os, restore a feeling of system basics.
