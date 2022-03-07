@@ -2,9 +2,14 @@
 This file will be organized in a reverse chronological order，with week record after 7 daily record.
 
 ## W9-2022
+### Mar 6
+- OS
+  - reread doc and add comment to ros ch1 to ch3
+  - finshed ch4
 ### Mar 5
 - OS
   - installing riscv qemu
+  - finished ros ch1 to ch3
 ### Mar 4
 - Rust
   - [Green Threads Explained in 200lines](https://cfsamson.gitbook.io/green-threads-explained-in-200-lines-of-rust/)
