@@ -3,8 +3,9 @@ This file will be organized in a reverse chronological order，with week record 
 
 ## W10-2022
 ### Mar 7
-- Cypher
-  - finished [Beginner Cypher](https://neo4j.com/developer/cypher/)
+- DB
+  - Cypher: finished [Beginner Cypher](https://neo4j.com/developer/cypher/)
+  - Designing data-intensive application: P34-42
 ## W9-2022
 ### Week Summary
 Devote much time on rust-vm and rust-os, restore a feeling of system basics.
