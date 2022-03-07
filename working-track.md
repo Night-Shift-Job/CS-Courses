@@ -2,6 +2,8 @@
 This file will be organized in a reverse chronological order，with week record after 7 daily record.
 
 ## W9-2022
+### Week Summary
+Devote much time on rust-vm and rust-os, restore a feeling of system basics.
 ### Mar 6
 - OS
   - reread doc and add comment to ros [ch1](https://os.phil-opp.com/freestanding-rust-binary/) to [ch3](https://os.phil-opp.com/vga-text-mode/)
