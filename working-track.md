@@ -5,7 +5,7 @@ This file will be organized in a reverse chronological order，with week record 
 ### Mar 6
 - OS
   - reread doc and add comment to ros [ch1](https://os.phil-opp.com/freestanding-rust-binary/) to [ch3](https://os.phil-opp.com/vga-text-mode/)
-  - finshed (ch4)[https://os.phil-opp.com/testing/]
+  - finshed [ch4](https://os.phil-opp.com/testing/)
 ### Mar 5
 - OS
   - installing riscv qemu
