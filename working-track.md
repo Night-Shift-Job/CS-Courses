@@ -2,6 +2,9 @@
 This file will be organized in a reverse chronological order，with week record after 7 daily record.
 
 ## W10-2022
+### Mar 8
+- DB
+  - Designing data-intensive application: Ch.2 
 ### Mar 7
 - DB
   - Cypher: finished [Beginner Cypher](https://neo4j.com/developer/cypher/)
