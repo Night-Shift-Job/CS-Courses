@@ -10,6 +10,7 @@ This file will be organized in a reverse chronological order，with week record 
 ### Mar 8
 - DB
   - Designing data-intensive application: Ch.2 
+  - Finished cypher documentation
 ### Mar 7
 - DB
   - Cypher: finished [Beginner Cypher](https://neo4j.com/developer/cypher/)
