@@ -2,6 +2,11 @@
 This file will be organized in a reverse chronological order，with week record after 7 daily record.
 
 ## W10-2022
+### Mar 9
+- DB: decide to finish 15721
+  - Re-read [An Overview of Query Optimization in Relational Systems](https://15721.courses.cs.cmu.edu/spring2020/papers/19-optimizer1/chaudhuri-pods1998.pdf)
+  - Read vocano-optimizer paper [The Volcano Optimizer Generator: Extensibility and Efficient Search](https://15721.courses.cs.cmu.edu/spring2020/papers/19-optimizer1/graefe-icde1993.pdf)
+  - Watching first half of video [15721-Optimizer Implementation (Overview)](https://youtu.be/q4NeEGMoKmc)
 ### Mar 8
 - DB
   - Designing data-intensive application: Ch.2 
