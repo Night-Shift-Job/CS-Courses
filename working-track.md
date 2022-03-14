@@ -1,7 +1,20 @@
 # Report
 This file will be organized in a reverse chronological order，with week record after 7 daily record.
 
+## W11-2022
+### Mar 14
+- Go: finished go tour
+- atlas:
+  - read planner code
+  - 1/5 apoc.text
+
 ## W10-2022
+### Mar 13
+- DB:
+  - Finished Columbia paper
+### Mar 10
+- DB:
+  - Finished 15721-Optimizer video
 ### Mar 9
 - DB: decide to finish 15721
   - Re-read [An Overview of Query Optimization in Relational Systems](https://15721.courses.cs.cmu.edu/spring2020/papers/19-optimizer1/chaudhuri-pods1998.pdf)
