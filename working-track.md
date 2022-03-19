@@ -2,13 +2,17 @@
 This file will be organized in a reverse chronological order，with week record after 7 daily record.
 
 ## W11-2022
+### Mar 19
+- DS
+  - MapReduce论文阅读
+### Mar 18
+- DB
+    - 完成tidb的本机部署，跑通tide（mac无法部署，aws卡死真垃圾）
+### Mar 16
 - DB:
   - [Orca Modular Query Optimizer Architecture](https://15721.courses.cs.cmu.edu/spring2020/papers/19-optimizer1/p337-soliman.pdf)
   - tidb
     - optimizer源码阅读
-    - 完成tidb的本机部署，为个人服务器增加ssh服务
-- DS
-  - MapReduce论文阅读
 
 ### Mar 15
 - DB:
