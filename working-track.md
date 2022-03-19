@@ -2,6 +2,23 @@
 This file will be organized in a reverse chronological order，with week record after 7 daily record.
 
 ## W11-2022
+- DB:
+  - [Orca Modular Query Optimizer Architecture](https://15721.courses.cs.cmu.edu/spring2020/papers/19-optimizer1/p337-soliman.pdf)
+  - tidb
+    - optimizer源码阅读
+    - 完成tidb的本机部署，为个人服务器增加ssh服务
+- DS
+  - MapReduce论文阅读
+
+### Mar 15
+- DB:
+  - [How We Built a Cost-Based SQL Optimizer](https://www.cockroachlabs.com/blog/building-cost-based-sql-optimizer/)
+    - Source code: https://github.com/cockroachdb/cockroach/blob/master/pkg/sql/opt/xform/optimizer.go
+  - [SQL 查询优化原理与 Volcano Optimizer 介绍](https://io-meter.com/2018/11/01/sql-query-optimization-volcano/)
+    - > 因此，Volcano Optimizer 采取了自顶向下的计算方法，在计算开始， 每棵子树先按照原先的样子计算成本并作为初始结果。在不断应用规则的过程中，如果出现一种新的结构被加入到当前的等价集合中， 且这种等价集合具有更优的成本，这时需要向上冒泡到所有依赖这一子集合的父亲等价集合， 更新集合里每个元素的成本并得到新的最优成本和方案。
+  - tidb optimizer源码阅读
+- atlas:
+  - 2/5 apoc.text
 ### Mar 14
 - Go: finished go tour
 - atlas:
