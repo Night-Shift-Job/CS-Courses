@@ -10,3 +10,8 @@
     - 进行一定有效的heuristic处理，注释中提到列剪枝。
     - 调用LogicalPlan.PruneColumns
         - 具体实现在planner/core/rule_column_pruning中
+
+        SELECT Orders.OrderID, Customers.CustomerName, Orders.OrderDesc FROM Orders INNER JOIN Customers ON Orders.CustomerID=Customers.CustomerID;
+Projection -> Selection -> InnerJoin
+
+- parentUsedCols

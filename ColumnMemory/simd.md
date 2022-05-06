@@ -1,0 +1,8 @@
+- https://docs.rs/packed_simd_2/latest/packed_simd_2/
+- https://databricks.com/session_eu20/building-a-simd-supported-vectorized-native-engine-for-spark-sql
+- https://www.intel.com/content/www/us/en/docs/intrinsics-guide/index.html#cats=Arithmetic&expand=3904,3913,4011,34,4014,4602,4011&techs=MMX,SSE,SSE2,SSE3,SSSE3,SSE4_1,SSE4_2,AVX,AVX2,FMA,AVX_512,AMX,SVML,Other
+- https://github.com/rust-lang/portable-simd/blob/master/beginners-guide.md
+- https://www.datacouncil.ai/talks/the-future-of-column-oriented-data-processing-with-arrow-and-parquet
+    - apache arrow for mem and parquet for disk
+- http://ftp.cvut.cz/kernel/people/geoff/cell/ps3-linux-docs/CellProgrammingTutorial/BasicsOfSIMDProgramming.html
+- *** https://www.youtube.com/watch?v=qejTqnxQRcw

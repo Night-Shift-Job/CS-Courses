@@ -1,0 +1,4 @@
+- [bohuTang 关于clickhouse pipeline的简单介绍](https://bohutang.me/2020/06/11/clickhouse-and-friends-processor/)
+- clickhouse pipeline代码
+- databend pipeline的rs代码
+- https://presentations.clickhouse.com/meetup24/5.%20Clickhouse%20query%20execution%20pipeline%20changes/
